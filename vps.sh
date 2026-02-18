@@ -5,8 +5,17 @@
 sudo apt-get update -y
 sudo apt-get install -y ufw
 
-sleep 4
+cd /usr/local/bin 
+wget https://github.com/wibowo881/test/blob/9fb2d0aef9a312c19c922b758af45e073d2c1c30/badvpn-udpgw
 
+sleep 4
+wget https://github.com/wibowo881/test/blob/9fb2d0aef9a312c19c922b758af45e073d2c1c30/zivpn
+
+sleep 4
+chmod +x cd /usr/local/bin/zivpn
+chmod +x cd /usr/local/bin/badvpn-udpgw
+
+sleep 2
 mkdir /root/cert
 sudo setcap cap_net_bind_service=+ep /usr/local/bin/zivpn
 echo 1 >/proc/sys/net/ipv4/ip_forward
