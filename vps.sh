@@ -5,6 +5,7 @@
 sudo apt-get update -y
 sudo apt-get install -y ufw
 
+sleep 8
 cd /usr/local/bin 
 wget https://github.com/wibowo881/test/blob/9fb2d0aef9a312c19c922b758af45e073d2c1c30/badvpn-udpgw
 
